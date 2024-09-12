@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVE MOTO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="head_container">
+        <div class="left_menus">
+            <ul>
+                <li><a href="#Shop">Магазины</a></li>
+                <li><a href="#Sale">Акции</a></li>
+                <li><a href="#Delivery">Доставка и оплата</a></li>
+            </ul>
+            <div class="logo">
+                <img src="./img_logo/DirveMoto.svg" alt="DriveMoto_Logo">
+            </div>
+            <div class="right_menus">
+                <img src="./img_logo/location.svg" alt="Location_icon">
+                <li><a href="#Location">Москва, ул. Науки 25</a></li>
+            </div>
+            <div class="icons">
+                <img src="./img_logo/heart.svg" alt="Icon_Heart">
+                <img src="./img_logo/Person.svg" alt="Icon_person">
+                <img src="./img_logo/barrow.svg" alt="Icon_Barrow">
+            </div>
+        </div>
+        <section class="second_menus">
+            <nav>
+                <ul>
+                    <li><a href="#Bike">Квадроциклы</a></li>
+                    <li><a href="#Boats">Катера</a></li>
+                    <li class="current_page"><a href="#jet_sky">Гидроциклы</a></li>
+                    <li><a href="#smal_Boat">Лодки</a></li>
+                    <li><a href="#All-terrain_Vehicles">Вездеходы</a></li>
+                    <li><a href="#Snowmobiles">Снегоходы</a></li>
+                    <li><a href="#Engines">Двигатели</a></li>
+                    <li><a href="#Spare_parts">Запчасти</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header> <br><br><br>
+
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img_logo/big_img.svg" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img_logo/products.svg" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img_logo/img5.svg" alt="IMG"></div>
+                <div class="swiper-slide"><img src="./img_logo/skidka.svg" alt="IMG"></div>
+            </div>
+            <div class="swiper-button-next" ></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination""></div>
+        </div> <br><br><br>
+    </section>
+
+    <main class="img7">
+        <img class="img8" src="./img_logo/sale.svg" alt="Image of sale">
+        <div class="search_part">
+            <div class="menus">
+                <ul>
+                    <li><a href="#Menu1">Поиск по номеру</a></li>
+                    <li class="current_page2"><a href="#Menu2">Поиск по марке</a></li>
+                    <li><a href="#Menu3">Поиск по названию товара</a></li>
+                </ul>
+            </div> <br>
+    
+            <div class="search_input">
+                <input type="text" placeholder="Введите марку">
+                <label for="search">искать</label>
+            </div>
+        </div>
+    </main> <br> <br> <br>
+    
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img_logo/img1.svg" alt="IMG1"></div>
+            <div class="swiper-slide"><img src="./img_logo/img2.svg" alt="IMG2"></div>
+            <div class="swiper-slide"><img src="./img_logo/img3.svg" alt="IMG3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    </script>
+</body>
+</html>
+
